@@ -8,10 +8,7 @@ environment:
   sdk: '>=1.20.1 <2.0.0'
 
 dependencies:
-  google_maps:
-    git:
-      url: https://github.com/sestegra/dart-google-maps
-      ref: "3.28"
+  google_maps: ^3.2.1
   js_wrapping: ^0.4.0
 
 dev_dependencies:
@@ -19,9 +16,3 @@ dev_dependencies:
   html: ^0.12.0
   js_wrapping_generator: ^0.4.0
   test: ^0.12.0
-
-dependency_overrides:
-#  js_wrapping:
-#    path: ../dart-js-wrapping2/js_wrapping
-  js_wrapping_generator:
-    path: ../dart-js-wrapping/js_wrapping_generator
