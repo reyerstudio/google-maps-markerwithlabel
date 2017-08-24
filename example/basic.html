@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+        .labels {
+            color: red;
+            background-color: white;
+            font-family: "Lucida Grande", "Arial", sans-serif;
+            font-size: 10px;
+            font-weight: bold;
+            text-align: center;
+            width: 40px;
+            border: 2px solid black;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+<p>A basic example of markers with labels. Note that an information window appears whether you
+    click the marker portion or the label portion of the MarkerWithLabel. The two markers shown here
+    are both draggable so you can easily verify that markers and labels overlap as expected.</p>
+<div id="map_canvas" style="height: 400px; width: 100%;"></div>
+<div id="log"></div>
+<script src="http://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+<script src="packages/google_maps_markerwithlabel/js/markerwithlabel.js"></script>
+<script type="application/dart" src="basic.dart"></script>
+<script src="packages/browser/dart.js"></script>
+</body>
+</html>

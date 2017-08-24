@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Picture Label for Marker</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+        .labels {
+            color: white;
+            background-color: red;
+            font-family: "Lucida Grande", "Arial", sans-serif;
+            font-size: 10px;
+            text-align: center;
+            width: 100px;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+<p>This is an example of how to use a picture as a marker label. Since the picture label is quite large, the opacity of the label is set to 0.50 to make it possible to get a rough idea of what's on the map behind the picture.</p>
+<div id="map_canvas" style="height: 400px; width: 100%;"></div>
+<script src="http://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+<script src="packages/google_maps_markerwithlabel/js/markerwithlabel.js"></script>
+<script type="application/dart" src="picturelabel.dart"></script>
+<script src="packages/browser/dart.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+name: google_maps_markerwithlabel
+description: MarkerWithLabel extends the Google Maps Marker class
+version: 0.1.0
+homepage: https://github.com/reyerstudio/google-maps-markerwithlabel
+author: Stéphane Este-Gracias <email@example.com>
+
+environment:
+  sdk: '>=1.20.1 <2.0.0'
+
+dependencies:
+  google_maps:
+    git:
+      url: https://github.com/sestegra/dart-google-maps
+      ref: "3.28"
+  js_wrapping: ^0.4.0
+
+dev_dependencies:
+  browser: ^0.10.0
+  html: ^0.12.0
+  js_wrapping_generator: ^0.4.0
+  test: ^0.12.0
+
+dependency_overrides:
+#  js_wrapping:
+#    path: ../dart-js-wrapping2/js_wrapping
+  js_wrapping_generator:
+    path: ../dart-js-wrapping/js_wrapping_generator
