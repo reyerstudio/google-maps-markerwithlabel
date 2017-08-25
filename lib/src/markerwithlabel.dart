@@ -14,8 +14,7 @@ part 'markerwithlabel.g.dart';
 abstract class _MarkerWithLabel extends Marker {
   factory _MarkerWithLabel([MarkerWithLabelOptions opts]) => null;
 
-  void set labelContent(String content) => _setLabelContent(content);
-  void _setLabelContent(String content);
+  String labelContent;
 
   @override
   Stream<MouseEvent> get onClick => getStream(this, #onClick, "click");

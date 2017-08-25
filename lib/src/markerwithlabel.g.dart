@@ -23,10 +23,11 @@ class MarkerWithLabel extends Marker {
       : this.created(
             new JsObject(context['MarkerWithLabel'], [__codec2.encode(opts)]));
 
-  void set labelContent(String content) => _setLabelContent(content);
-  void _setLabelContent(String content) {
-    asJsObject(this).callMethod('setLabelContent', [content]);
+  void set labelContent(String _labelContent) {
+    asJsObject(this)['labelContent'] = _labelContent;
   }
+
+  String get labelContent => asJsObject(this)['labelContent'];
 
   @override
   Stream<MouseEvent> get onClick => getStream(this, #onClick, "click");
