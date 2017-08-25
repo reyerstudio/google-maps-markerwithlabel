@@ -1,7 +1,7 @@
 // Copyright (c) 2017, Stéphane Este-Gracias. All rights reserved. Use of this source code
 // is governed by a BSD-style license that can be found in the LICENSE file.
 
-import 'dart:html';
+import 'dart:html' hide MouseEvent, Point;
 
 import 'package:google_maps/google_maps.dart';
 import 'package:google_maps_markerwithlabel/markerwithlabel.dart';

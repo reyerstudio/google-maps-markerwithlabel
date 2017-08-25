@@ -27,6 +27,40 @@ class MarkerWithLabel extends Marker {
   void _setLabelContent(String content) {
     asJsObject(this).callMethod('setLabelContent', [content]);
   }
+
+  @override
+  Stream<MouseEvent> get onClick => getStream(this, #onClick, "click");
+
+  @override
+  Stream<MouseEvent> get onDblclick => getStream(this, #onDblclick, "dblclick");
+
+  @override
+  Stream<MouseEvent> get onDrag => getStream(this, #onDrag, "drag");
+
+  @override
+  Stream<MouseEvent> get onDragend => getStream(this, #onDragend, "dragend");
+
+  @override
+  Stream<MouseEvent> get onDragstart =>
+      getStream(this, #onDragstart, "dragstart");
+
+  @override
+  Stream<MouseEvent> get onMousedown =>
+      getStream(this, #onMousedown, "mousedown");
+
+  @override
+  Stream<MouseEvent> get onMouseout => getStream(this, #onMouseout, "mouseout");
+
+  @override
+  Stream<MouseEvent> get onMouseover =>
+      getStream(this, #onMouseover, "mouseover");
+
+  @override
+  Stream<MouseEvent> get onMouseup => getStream(this, #onMouseup, "mouseup");
+
+  @override
+  Stream<MouseEvent> get onRightclick =>
+      getStream(this, #onRightclick, "rightclick");
 }
 
 @GeneratedFrom(_MarkerWithLabelOptions)
