@@ -1,6 +1,6 @@
 name: google_maps_markerwithlabel
 description: MarkerWithLabel extends the Google Maps Marker class
-version: 0.1.0
+version: 0.1.1
 homepage: https://github.com/reyerstudio/google-maps-markerwithlabel
 author: Stéphane Este-Gracias <sestegra@gmail.com>
 
