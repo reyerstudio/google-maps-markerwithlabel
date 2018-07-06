@@ -3,25 +3,15 @@
 part of google_maps_markerwithlabel.src;
 
 // **************************************************************************
-// Generator: JsInterfaceGenerator
+// JsWrappingGenerator
 // **************************************************************************
-
-/// codec for google_maps_markerwithlabel.src.MarkerWithLabelOptions
-final __codec2 = new JsInterfaceCodec<MarkerWithLabelOptions>(
-    (o) => new MarkerWithLabelOptions.created(o));
-
-/// codec for google_maps.src.Point
-final __codec1 = new JsInterfaceCodec<Point>((o) => new Point.created(o));
-
-/// codec for null.dynamic
-final __codec0 = new DynamicCodec();
 
 @GeneratedFrom(_MarkerWithLabel)
 class MarkerWithLabel extends Marker {
   MarkerWithLabel.created(JsObject o) : super.created(o);
   MarkerWithLabel([MarkerWithLabelOptions opts])
       : this.created(
-            new JsObject(context['MarkerWithLabel'], [__codec2.encode(opts)]));
+            new JsObject(context['MarkerWithLabel'], [__codec0.encode(opts)]));
 
   void set labelContent(String _labelContent) {
     asJsObject(this)['labelContent'] = _labelContent;
@@ -116,3 +106,10 @@ class MarkerWithLabelOptions extends MarkerOptions {
 
   bool get raiseOnDrag => asJsObject(this)['raiseOnDrag'];
 }
+
+/// codec for google_maps_markerwithlabel.src.MarkerWithLabelOptions
+final __codec0 = new JsInterfaceCodec<MarkerWithLabelOptions>(
+    (o) => new MarkerWithLabelOptions.created(o));
+
+/// codec for google_maps.src.Point
+final __codec1 = new JsInterfaceCodec<Point>((o) => new Point.created(o));
