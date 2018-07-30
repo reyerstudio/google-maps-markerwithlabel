@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.0
+ - Migration to Dart 2
+
 ## 0.1.1
 
 - Fix MarkerWithLabel: Cannot read property 'removeChild' of null
