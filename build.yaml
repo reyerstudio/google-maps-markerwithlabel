@@ -6,12 +6,3 @@ targets:
         generate_for:
         - 'lib/src/markerwithlabel.dart'
         - 'example/*.dart'
-
-builders:
-  js_wrapping:
-    target: "js_wrapping_generator"
-    import: "package:js_wrapping_generator/builder.dart"
-    builder_factories: ["jsWrapping"]
-    build_extensions: {".dart": [".g.dart"]}
-    auto_apply: dependents
-    build_to: source

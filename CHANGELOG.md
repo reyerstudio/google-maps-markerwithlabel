@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.0+1
+ - Fix build.yaml
+
 ## 0.2.0
  - Migration to Dart 2
 
