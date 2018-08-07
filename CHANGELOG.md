@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.0
+ - Increased the upper bound for the sdk to <3.0.0.
+ - Fix getStream calls
+
 ## 0.2.0+1
  - Fix build.yaml
 

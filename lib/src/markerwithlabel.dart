@@ -17,38 +17,38 @@ abstract class _MarkerWithLabel extends Marker {
   String labelContent;
 
   @override
-  Stream<MouseEvent> get onClick => getStream(this, #onClick, "click", (JsObject o) => MouseEvent.created(o));
+  Stream<MouseEvent> get onClick => getStream(this, "click", (JsObject o) => new MouseEvent.created(o));
 
   @override
-  Stream<MouseEvent> get onDblclick => getStream(this, #onDblclick, "dblclick", (JsObject o) => MouseEvent.created(o));
+  Stream<MouseEvent> get onDblclick => getStream(this, "dblclick", (JsObject o) => new MouseEvent.created(o));
 
   @override
-  Stream<MouseEvent> get onDrag => getStream(this, #onDrag, "drag", (JsObject o) => MouseEvent.created(o));
+  Stream<MouseEvent> get onDrag => getStream(this, "drag", (JsObject o) => new MouseEvent.created(o));
 
   @override
-  Stream<MouseEvent> get onDragend => getStream(this, #onDragend, "dragend", (JsObject o) => MouseEvent.created(o));
+  Stream<MouseEvent> get onDragend => getStream(this, "dragend", (JsObject o) => new MouseEvent.created(o));
 
   @override
   Stream<MouseEvent> get onDragstart =>
-      getStream(this, #onDragstart, "dragstart", (JsObject o) => MouseEvent.created(o));
+      getStream(this, "dragstart", (JsObject o) => new MouseEvent.created(o));
 
   @override
   Stream<MouseEvent> get onMousedown =>
-      getStream(this, #onMousedown, "mousedown", (JsObject o) => MouseEvent.created(o));
+      getStream(this, "mousedown", (JsObject o) => new MouseEvent.created(o));
 
   @override
-  Stream<MouseEvent> get onMouseout => getStream(this, #onMouseout, "mouseout", (JsObject o) => MouseEvent.created(o));
+  Stream<MouseEvent> get onMouseout => getStream(this, "mouseout", (JsObject o) => new MouseEvent.created(o));
 
   @override
   Stream<MouseEvent> get onMouseover =>
-      getStream(this, #onMouseover, "mouseover", (JsObject o) => MouseEvent.created(o));
+      getStream(this, "mouseover", (JsObject o) => new MouseEvent.created(o));
 
   @override
-  Stream<MouseEvent> get onMouseup => getStream(this, #onMouseup, "mouseup", (JsObject o) => MouseEvent.created(o));
+  Stream<MouseEvent> get onMouseup => getStream(this, "mouseup", (JsObject o) => new MouseEvent.created(o));
 
   @override
   Stream<MouseEvent> get onRightclick =>
-      getStream(this, #onRightclick, "rightclick", (JsObject o) => MouseEvent.created(o));
+      getStream(this, "rightclick", (JsObject o) => new MouseEvent.created(o));
 }
 
 @anonymous
