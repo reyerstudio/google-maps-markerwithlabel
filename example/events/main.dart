@@ -7,27 +7,27 @@ import 'package:google_maps/google_maps.dart';
 import 'package:google_maps_markerwithlabel/markerwithlabel.dart';
 
 main() {
-  var latLng = new LatLng(49.47805, -123.84716);
-  var homeLatLng = new LatLng(49.47805, -123.84716);
+  var latLng = LatLng(49.47805, -123.84716);
+  var homeLatLng = LatLng(49.47805, -123.84716);
 
-  var map = new GMap(
+  var map = GMap(
       document.getElementById('map_canvas'),
-      new MapOptions()
+      MapOptions()
         ..zoom = 12
         ..center = latLng
         ..mapTypeId = MapTypeId.ROADMAP);
 
-  var marker = new MarkerWithLabel(new MarkerWithLabelOptions()
+  var marker = MarkerWithLabel(MarkerWithLabelOptions()
         ..position = homeLatLng
         ..draggable = true
         ..raiseOnDrag = true
         ..map = map
         ..labelContent = "\$425K"
-        ..labelAnchor = new Point(22, 0)
+        ..labelAnchor = Point(22, 0)
         ..labelClass = "labels" // the CSS class for the label
       );
 
-  var iw = new InfoWindow()..content = "Home For Sale";
+  var iw = InfoWindow()..content = "Home For Sale";
   marker
     ..onClick.listen((_) => iw.open(map, marker))
     ..onDblclick.listen((_) => log("Double Click"))

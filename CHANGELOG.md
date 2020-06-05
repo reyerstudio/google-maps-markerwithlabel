@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.4.0
+ - Updates dependencies
+
 ## 0.3.0
  - Increased the upper bound for the sdk to <3.0.0.
  - Fix getStream calls

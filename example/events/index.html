@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Simple Map</title>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
-    <style>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>MarkerWithLabel Mouse Events</title>
+    <style type="text/css">
         .labels {
             color: red;
             background-color: white;
@@ -19,13 +18,11 @@
     </style>
 </head>
 <body>
-<p>A basic example of markers with labels. Note that an information window appears whether you
-    click the marker portion or the label portion of the MarkerWithLabel. The two markers shown here
-    are both draggable so you can easily verify that markers and labels overlap as expected.</p>
+<p>Try interacting with the marker (mouseover, mouseout, click, double-click, mouse down, mouse up, drag) to see a log of events that are fired. Events are fired whether you are interacting with the marker portion or the label portion.</p>
 <div id="map_canvas" style="height: 400px; width: 100%;"></div>
 <div id="log"></div>
-<script src="http://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
 <script src="packages/google_maps_markerwithlabel/js/markerwithlabel.js"></script>
-<script defer src="basic.dart.js"></script>
+<script defer src="main.dart.js"></script>
 </body>
 </html>

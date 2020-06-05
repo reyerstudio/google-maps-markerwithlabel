@@ -1,8 +1,8 @@
 targets:
   $default:
     builders:
-      js_wrapping_generator|js_wrapping:
-        enabled: true
+      js_wrapping_generator:
         generate_for:
-        - 'lib/src/markerwithlabel.dart'
-        - 'example/*.dart'
+          include:
+          - lib/src/markerwithlabel.dart
+          - example/**.dart
